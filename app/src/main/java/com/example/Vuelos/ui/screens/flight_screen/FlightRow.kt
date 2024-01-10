@@ -8,6 +8,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.outlined.FavoriteBorder
 import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -33,7 +34,8 @@ fun FlightRow(
     onFavoriteClick: (String, String) -> Unit,
 ) {
     Card(
-        elevation = 8.dp,
+        elevation = CardDefaults.cardElevation(
+            defaultElevation = 10.dp),
         modifier = Modifier
             .fillMaxWidth()
             .padding(4.dp)
@@ -45,13 +47,13 @@ fun FlightRow(
                 Column {
                     Text(
                         text = "Depart",
-                        style = MaterialTheme.typography.overline,
+                        style = MaterialTheme.typography.headlineMedium,
                         modifier = Modifier.padding(start = 32.dp)
                     )
                     AirportRow(code = departureAirportCode, name = departureAirportName)
                     Text(
                         text = "Arrival",
-                        style = MaterialTheme.typography.overline,
+                        style = MaterialTheme.typography.headlineMedium,
                         modifier = Modifier.padding(start = 32.dp)
                     )
                     AirportRow(code = destinationAirportCode, name = destinationAirportName)

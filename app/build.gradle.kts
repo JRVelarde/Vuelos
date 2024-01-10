@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.uelos"
+    namespace = "com.example.Vuelos"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.uelos"
+        applicationId = "com.example.Vuelos"
         minSdk = 21
         targetSdk = 34
         versionCode = 1

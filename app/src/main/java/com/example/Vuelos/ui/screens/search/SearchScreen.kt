@@ -7,8 +7,9 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.Vuelos.NavigationDestination
+import com.example.Vuelos.R
 import com.example.Vuelos.model.Favorite
-import com.example.uelos.R
+
 
 object SearchDestination : NavigationDestination {
     override val route = "home"

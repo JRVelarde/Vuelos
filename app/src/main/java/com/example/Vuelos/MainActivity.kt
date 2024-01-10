@@ -8,17 +8,18 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 
 import androidx.compose.ui.Modifier
+import com.example.Vuelos.ui.theme.VuelosTheme
 
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            FlightSearchTheme {
+            VuelosTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
+                    color = MaterialTheme.colorScheme.background
                 ) {
                     FlightSearchApp()
                 }

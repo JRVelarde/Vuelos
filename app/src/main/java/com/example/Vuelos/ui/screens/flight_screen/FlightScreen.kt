@@ -7,7 +7,8 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.platform.LocalContext
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.Vuelos.NavigationDestination
-import com.example.uelos.R
+import com.example.Vuelos.R
+
 
 object FlightScreenDestination : NavigationDestination {
     override val route = "flight_screen"
